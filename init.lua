@@ -26,6 +26,7 @@ local function entry(_, args)
 		cmd_args = [[cheatshh]]
 	elseif args[1] == "a" then
 		cmd_args = [[cheatshh -a]]
+	-- All the flags are -a, -g, -ec, -eg, -dc, -dg, -m, simply we have to run cheatshh -flag.
 	end
 	local child, err = Command(shell_value)
 		:args({ "-c", cmd_args })

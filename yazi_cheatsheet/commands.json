@@ -1,0 +1,8 @@
+{
+    "dummy_command":{
+        "description": "This is a dummy command. Template for more commands to add. Alias can be yes/no. Group will be yes since this is a part of yazi_commands group. Bookmark is no, user can change it to yes.",
+        "alias": "yes/no",
+        "group": "yes",
+        "bookmark": "no"
+    }
+}

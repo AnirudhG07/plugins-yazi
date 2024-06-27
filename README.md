@@ -2,6 +2,7 @@
 A Yazi plugin for searching commands and copying them to your clipbaord, using [cheatshh](https://github.com/AnirudhG07/cheatshh)
 
 ## Dependencies
+Please follow the download instruction and dependencies in the below link.
 - [cheatshh](https://github.com/AnirudhG07/cheatshh)
 
 This is mainly for Unix(Linux and Macos). 
@@ -25,3 +26,7 @@ on   = [ "c","A" ]
 run  = "plugin cheatshh --args='a'"
 desc = "Add command in cheatshh"
 ```
+
+## TODO
+1. Add provision for more flags in cheatshh hopefully using popup in the middle of the screen.
+2. Fill the yazi_cheatshh with commands.
