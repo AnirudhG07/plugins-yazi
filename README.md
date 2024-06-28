@@ -12,7 +12,6 @@ Use the below command to install the plugin-
 ```bash
 git clone https://github.com/AnirudhG07/cheatshh.yazi.git ~/.config/yazi/plugins/cheatshh.yazi
 ```
-
 ## Keymapping and Usage
 You can copy the below commands to `keymap.toml` to use the plugin-
 ```toml
@@ -20,13 +19,8 @@ You can copy the below commands to `keymap.toml` to use the plugin-
 on   = [ "c","h" ]
 run  = "plugin cheatshh"
 desc = "Find command in cheatshh"
-
-[[manager.prepend_keymap]]
-on   = [ "c","A" ]
-run  = "plugin cheatshh --args='a'"
-desc = "Add command in cheatshh"
 ```
 
 ## TODO
 1. Add provision for more flags in cheatshh hopefully using popup in the middle of the screen.
-2. Fill the yazi_cheatshh with commands.
+2. Fill the yazi_cheatsheet with commands.
