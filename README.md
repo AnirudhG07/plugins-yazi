@@ -47,3 +47,6 @@ Instead to add,edit,delete commands and groups, either use the regular terminal 
 
 1. The flag command run within yazi do not run properly. They skip the whiptail asking for yes/no.
 
+## Explore Yazi
+
+Yazi is an amazing, blazing fast terminal file manager, with a variety of plugins, flavors and themes. Check them out at [awesome-yazi](https://github.com/AnirudhG07/awesome-yazi) and the official [yazi webpage](https://yazi-rs.github.io/).
