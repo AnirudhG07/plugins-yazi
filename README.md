@@ -1,52 +1,34 @@
-# cheatshh.yazi
+# Plugins Yazi
 
-A Yazi plugin for searching commands and copying them to your clipbaord, using [cheatshh](https://github.com/AnirudhG07/cheatshh)
+This is a list of plugins that I have created for Yazi. I have created single repositories previously for many of my plugins(links mentioned below). Any new plugins I create will be added here hopefully.
 
-## Dependencies
+## Exploring Yazi
 
-Please follow the download instruction and dependencies in the below link.
+[Yazi](https://github.com/sxyazi/yazi) is an amazing Terminal File manager written in Rust. Yazi supports a variety of plugins, flavors and themes. Check them out at [awesome-yazi](https://github.com/AnirudhG07/awesome-yazi) and the official [yazi webpage](https://yazi-rs.github.io/).
 
-- [cheatshh](https://github.com/AnirudhG07/cheatshh)
+If you make your own plugin or theme, feel free to make a PR to [awesome-yazi](https://github.com/AnirudhG07/awesome-yazi) and I will be happy to merge it.
 
-This is mainly for Unix(Linux and Macos).
+## Plugins Previously Made
+
+Here is a list of plugins that I have previously made that have their own repositories and added to this repository.
+
+- [archivemount.yazi](https://github.com/AnirudhG07/archivemount.yazi) - Mount archives in Yazi with `arhivemount`.
+- [custom-shell.yazi](https://github.com/AnirudhG07/custom-shell.yazi) - Use your custom shell as yazi shell with custom commands and keymaps.
+- [rich-preview.yazi](https://github.com/AnirudhG07/rich-preview.yazi) - Preview markdown, json, jupyter notebooks and more in Yazi with `rich`.
+- [nbpreview.yazi](https://github.com/AnirudhG07/nbpreview.yazi) - Preview Jupyter Notebooks in Yazi with `nbpreview`.
+- [mactag.yazi](https://github.com/yazi-rs/plugins/tree/main/mactag.yazi) - Tagging files in Yazi just like MacOS, co-authored with sxyazi(yazi maintainer).
+
+## Plugins in this Repository
+
+- [mactags.yazi](https://github.com/AnirudhG07/plugins-yazi/tree/main/mactags.yazi) - A supplement for `mactag.yazi` with more features for adding and searching tags.
+- [cheatshh.yazi](https://github.com/AnirudhG07/plugins-yazi/tree/main/cheatshh.yazi)(Beta) - View command line tools in Yazi with `cheatshh`.
 
 ## Installation
 
-Use the below command to install the plugin-
+To install any plugin from this repository, you can run the following command -
 
-```bash
-git clone https://github.com/AnirudhG07/cheatshh.yazi.git ~/.config/yazi/plugins/cheatshh.yazi
+```
+ya pack -a AnirudhG07/plugins-yazi:<plugin-name>
 ```
 
-## Keymapping and Usage
-
-You can copy the below commands to `keymap.toml` to use the plugin-
-
-```toml
-[[manager.prepend_keymap]]
-on   = [ "c","h" ]
-run  = "plugin cheatshh"
-desc = "Find command in cheatshh"
-```
-
-To choose various options within Yazi.
-
-```toml
-[[manager.prepend_keymap]]
-on   = [ "c","H" ]
-run  = "plugin cheatshh --args=options"
-desc = "Find command in cheatshh"
-```
-
-**NOTE**
-The `options` flag has bugs. It is recommended not to use it. For an empty screen you see by chance, Please press Enter to Continue ahead.
-
-Instead to add,edit,delete commands and groups, either use the regular terminal or manually edit it in `$HOME/.config/cheatshh` direct:ory.
-
-## Bugs
-
-1. The flag command run within yazi do not run properly. They skip the whiptail asking for yes/no.
-
-## Explore Yazi
-
-Yazi is an amazing, blazing fast terminal file manager, with a variety of plugins, flavors and themes. Check them out at [awesome-yazi](https://github.com/AnirudhG07/awesome-yazi) and the official [yazi webpage](https://yazi-rs.github.io/).
+The installation instruction for each plugin is also mentioned in each of their respective READMEs.
