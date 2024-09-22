@@ -51,6 +51,9 @@ Tag_mapping = {
 You can install it in MacOS using the following command:
 
 ```bash
+ya pack -a AnirudhG07/plugins-yazi:mactags
+
+## Linux/MacOS git clone
 git clone https://github.com/AnirudhG07/mactags.yazi ~/.config/yazi/plugins/mactags.yazi
 ```
 

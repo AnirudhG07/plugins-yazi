@@ -15,6 +15,9 @@ This is mainly for Unix(Linux and Macos).
 Use the below command to install the plugin-
 
 ```bash
+ya pack -a AnirudhG07/plugins-yazi:cheatshh
+
+## Linux/MacOS Git Clone
 git clone https://github.com/AnirudhG07/cheatshh.yazi.git ~/.config/yazi/plugins/cheatshh.yazi
 ```
 

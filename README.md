@@ -1,6 +1,6 @@
 # Plugins Yazi
 
-This is a list of plugins that I have created for Yazi. I have created single repositories previously for many of my plugins(links mentioned below). Any new plugins I create will be added here hopefully.
+This is a list of plugins that I have created for Yazi. Previously, I had created single repositories for some of the plugins(links mentioned below). Any new plugins created will be added here hopefully.
 
 ## Exploring Yazi
 
@@ -25,7 +25,7 @@ Here is a list of plugins that I have previously made that have their own reposi
 
 ## Installation
 
-To install any plugin from this repository, you can run the following command -
+To install any plugin(`<plugin-name>.yazi`) from this repository, you can run the following command -
 
 ```
 ya pack -a AnirudhG07/plugins-yazi:<plugin-name>
