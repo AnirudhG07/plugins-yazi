@@ -22,6 +22,7 @@ Here is a list of plugins that I have previously made that have their own reposi
 
 - [mactags.yazi](https://github.com/AnirudhG07/plugins-yazi/tree/main/mactags.yazi) - A supplement for `mactag.yazi` with more features for adding and searching tags.
 - [cheatshh.yazi](https://github.com/AnirudhG07/plugins-yazi/tree/main/cheatshh.yazi)(Beta) - View command line tools in Yazi with `cheatshh`.
+- [copy-file-contents.yazi](https://github.com/AnirudhG07/plugins-yazi/tree/main/copy-file-contents.yazi) - Copy the contents of a file to clipboard directly from Yazi.
 
 ## Installation
 

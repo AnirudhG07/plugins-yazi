@@ -27,7 +27,7 @@ Add the below keybinding to your `~/.config/yazi/keymaps.toml` file.
 ```toml
 [[manager.prepend_keymap]]
 on = "<A-y>"
-run = ["plugin copy-contents"]
+run = ["plugin copy-file-contents"]
 desc = "Copy contents of file"
 ```
 
