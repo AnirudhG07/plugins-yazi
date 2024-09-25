@@ -56,7 +56,7 @@ local function entry()
 
 	-- Remove the last appended character
 	if #append_char > 0 then
-		text = text:sub(1, -#append_char)
+		text = text:sub(1, -#append_char - 1)
 	end
 
 	local cmd_args = "echo " .. ya.quote(text) .. " | " .. clipboard_cmd
