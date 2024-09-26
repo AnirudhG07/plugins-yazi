@@ -10,6 +10,8 @@ A simple plugin to copy file contents just from Yazi without going into editor.
 
 ## Preview
 
+[copy-file-contents.yazi_preview.webm](https://github.com/user-attachments/assets/b7050697-1766-410a-ae5e-8519a62e650b)
+
 ## Installation
 
 You can install this plugin by running the following command
