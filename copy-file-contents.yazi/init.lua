@@ -44,19 +44,20 @@ local function entry()
 	-- call the attributes from setup
 	local append_char, notification, clipboard_cmd =
 		state_option("append_char"), state_option("notification"), state_option("clipboard_cmd")
+
 	local text = ""
-	for _, file in ipairs(files) do
+	for i, file in ipairs(files) do
 		local f = io.open(file, "r")
 		if f then
 			local file_content = f:read("*a")
-			text = text .. file_content .. append_char
+			-- Remove trailing newline before file appending
+			file_content = file_content:gsub("%s+$", "")
+			text = text .. file_content
+			if i < #files then
+				text = text .. append_char
+			end
 			f:close()
 		end
-	end
-
-	-- Remove the last appended character
-	if #append_char > 0 then
-		text = text:sub(1, -#append_char - 1)
 	end
 
 	local cmd_args = "echo " .. ya.quote(text) .. " | " .. clipboard_cmd
