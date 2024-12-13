@@ -49,7 +49,7 @@ local function entry()
 	ya.clipboard(text)
 	-- Notify the user that the file contents have been copied to clipboard
 	if notification then
-		notify("Copied file contents to clipboard")
+		notify("Copied " .. #files .. " file(s) contents to clipboard")
 	end
 end
 
