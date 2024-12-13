@@ -6,7 +6,7 @@ A simple plugin to copy file contents just from Yazi without going into editor.
 
 - Copy one or more file contents to clipboard.
 - Set custom separator for copied contents.
-- Set custom clipboard command.
+- It utilises yazi's `ya.clipboard()` to copy contents to clipboard, taking care of binary files too.
 
 ## Preview
 
@@ -37,7 +37,6 @@ Add the below to your `~/.config/yazi/init.lua` file to set custom options for t
 
 ```lua
 require("copy-file-contents"):setup({
-	clipboard_cmd = "default",
 	append_char = "\n",
 	notification = true,
 })
@@ -45,28 +44,5 @@ require("copy-file-contents"):setup({
 
 ## Options
 
-1. `clipboard_cmd`: Set the clipboard command to use. Use `"default"` to use the default command based on the OS.
-
-```lua
-OS_clipboard_mapping = {
-	["linux"] = "xclip -selection clipboard",
-	["macos"] = "pbcopy",
-	["windows"] = "clip",
-	["ios"] = "pbcopy",
-	["freebsd"] = "xclip -selection clipboard",
-	["dragonfly"] = "xclip -selection clipboard",
-	["netbsd"] = "xclip -selection clipboard",
-	["openbsd"] = "xclip -selection clipboard",
-	["solaris"] = "xclip -selection clipboard",
-	["android"] = "termux-clipboard-set",
-}
-```
-
-You can set the `clipboard_cmd` to any of the above commands. The command run to copy the contents will be run as -
-
-```bash
-echo file_name | clipboard_cmd
-```
-
-2. `append_char`: Set the character to append at the end of each copied file content. Default is `"\n"`.
-3. `notification`: Set to `true/false` to enable/disable notification after copying the contents. Default is `true`.
+1. `append_char`: Set the character to append at the end of each copied file content. Default is `"\n"`.
+2. `notification`: Set to `true/false` to enable/disable notification after copying the contents. Default is `true`.
