@@ -7,7 +7,7 @@ local function fail(s, ...)
 end
 
 local function get_selected_option()
-    local command = [[
+	local command = [[
     bash -c '
     OPTIONS=("1" "Add command" "2" "Add group" "3" "Edit Command" "4" "Edit group" "5" "Delete Command" "6" "Delete group")
     CHOICE=$(whiptail --title "Menu" --menu "Choose an option" 15 60 6 \
@@ -25,16 +25,16 @@ local function get_selected_option()
         exit 1
     fi
     '
-    ]]  -- Command to run your Bash script embedded as a string
-    local handle = io.popen(command, 'r')  -- Open the process for reading
-    if handle then
-        local output = handle:read("*a")  -- Read the entire output of the command
-        handle:close()  -- Close the process
-        return output  -- Return the captured output
-    else
+    ]] -- Command to run your Bash script embedded as a string
+	local handle = io.popen(command, "r") -- Open the process for reading
+	if handle then
+		local output = handle:read("*a") -- Read the entire output of the command
+		handle:close() -- Close the process
+		return output -- Return the captured output
+	else
 		fail("Failed to run cheatshh options")
-        return nil
-    end
+		return nil
+	end
 end
 
 local function commad_runner(cmd_args)
@@ -57,12 +57,12 @@ local function commad_runner(cmd_args)
 		return fail("Cannot read `cheatshh` output, error code %s", err), output
 	elseif not output.status.success and output.status.code ~= 130 then
 		return fail("`cheatshh` exited with error code %s", output.status.code), output
-    else
-        return true, output
-    end
+	else
+		return true, output
+	end
 end
 
-local function entry(_, args)
+local function entry(_, job)
 	local _permit = ya.hide()
 	local cmd_args = ""
 
@@ -75,9 +75,9 @@ local function entry(_, args)
 		[6] = "cheatshh -dg",
 	}
 
-	if args[1] == nil then
+	if job.args[1] == nil then
 		cmd_args = [[cheatshh]]
-	elseif args[1] == "options" then
+	elseif job.args[1] == "options" then
 		local selected_option, err = get_selected_option()
 		cmd_args = option_to_cmd_args[selected_option] or nil
 

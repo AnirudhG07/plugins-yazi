@@ -281,8 +281,8 @@ end
 
 return {
 
-	entry = function(_, args)
-		local action = args[1]
+	entry = function(_, job)
+		local action = job.args[1]
 		if not action then
 			return
 		end
