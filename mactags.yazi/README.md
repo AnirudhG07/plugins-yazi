@@ -10,7 +10,7 @@ You can select any number of files and tag them(or any other function) with mult
 
 ## Requirements
 
-- [yazi](https://github.com/sxyazi/yazi) Version >= 0.3.0
+- [yazi](https://github.com/sxyazi/yazi) Version >= 25.2.7
 - Tag, which you can install using `brew install tag`
 - [mactag.yazi](https://github.com/yazi-rs/plugins/tree/main/mactag.yazi)
 
@@ -81,42 +81,42 @@ Add the following line to your `keymap.toml` file-
 ```toml
 [[manager.prepend_keymap]]
 on = ["u", "a"]
-run = "plugin mactags --args=add"
+run = "plugin mactags add"
 desc = "Add multiple colored tags"
 ```
 
 ```toml
 [[manager.prepend_keymap]]
 on = ["u", "r"]
-run = "plugin mactags --args=remove"
+run = "plugin mactags remove"
 desc = "removes input tags from all tags"
 ```
 
 ```toml
 [[manager.prepend_keymap]]
 on = ["u", "d"]
-run = "plugin mactags --args=remove_all"
+run = "plugin mactags remove_all"
 desc = "removed all the tags attached"
 ```
 
 ```toml
 [[manager.prepend_keymap]]
 on = ["u", "s"]
-run = "plugin mactags --args=set"
+run = "plugin mactags set"
 desc = "remove all previous tags and set new ones"
 ```
 
 ```toml
 [[manager.prepend_keymap]]
 on = ["u", "f"]
-run = "plugin mactags --args=find_all"
+run = "plugin mactags find_all"
 desc = "find all files with input set of tags"
 ```
 
 ```toml
 [[manager.prepend_keymap]]
 on = ["u", "n"]
-run = "plugin mactags --args=tag_notify"
+run = "plugin mactags tag_notify"
 desc = "Notify the tags of the current file"
 ```
 
