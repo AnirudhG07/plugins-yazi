@@ -29,7 +29,7 @@ Here is a list of plugins that I have previously made that have their own reposi
 To install any plugin(`<plugin-name>.yazi`) from this repository, you can run the following command -
 
 ```
-ya pack -a AnirudhG07/plugins-yazi:<plugin-name>
+ya pkg add AnirudhG07/plugins-yazi:<plugin-name>
 ```
 
 The installation instruction for each plugin is also mentioned in each of their respective READMEs.
