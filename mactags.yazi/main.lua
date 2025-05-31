@@ -44,7 +44,7 @@ end
 local function commad_runner(cmd_args)
 	local cwd = state()
 	local child, err = Command(Shell_value)
-		:args({ "-c", cmd_args })
+		:arg({ "-c", cmd_args })
 		:cwd(cwd)
 		:stdin(Command.INHERIT)
 		:stdout(Command.PIPED)
