@@ -26,7 +26,7 @@ git clone https://github.com/AnirudhG07/cheatshh.yazi.git ~/.config/yazi/plugins
 You can copy the below commands to `keymap.toml` to use the plugin-
 
 ```toml
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = [ "c","h" ]
 run  = "plugin cheatshh"
 desc = "Find command in cheatshh"
@@ -35,7 +35,7 @@ desc = "Find command in cheatshh"
 To choose various options within Yazi.
 
 ```toml
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = [ "c","H" ]
 run  = "plugin cheatshh --args=options"
 desc = "Find command in cheatshh"

@@ -79,42 +79,42 @@ For the `find_all` command, the input taken is converted to `green,red,important
 Add the following line to your `keymap.toml` file-
 
 ```toml
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["u", "a"]
 run = "plugin mactags add"
 desc = "Add multiple colored tags"
 ```
 
 ```toml
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["u", "r"]
 run = "plugin mactags remove"
 desc = "removes input tags from all tags"
 ```
 
 ```toml
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["u", "d"]
 run = "plugin mactags remove_all"
 desc = "removed all the tags attached"
 ```
 
 ```toml
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["u", "s"]
 run = "plugin mactags set"
 desc = "remove all previous tags and set new ones"
 ```
 
 ```toml
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["u", "f"]
 run = "plugin mactags find_all"
 desc = "find all files with input set of tags"
 ```
 
 ```toml
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = ["u", "n"]
 run = "plugin mactags tag_notify"
 desc = "Notify the tags of the current file"

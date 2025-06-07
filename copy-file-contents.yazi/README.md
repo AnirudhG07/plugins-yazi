@@ -27,7 +27,7 @@ You can also manually install it by copying the [`main.lua`](https://github.com/
 Add the below keybinding to your `~/.config/yazi/keymaps.toml` file.
 
 ```toml
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = "<A-y>"
 run = ["plugin copy-file-contents"]
 desc = "Copy contents of file"
